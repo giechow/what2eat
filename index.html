@@ -2,13 +2,20 @@
 <html>
 <body>
 
-<h2>My First JavaScript</h2>
+<h2>Demo JavaScript in Body</h2>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+<p id="demo">A Paragraph.</p>
 
-<p id="demo"></p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    const restaurants = ["Toast Box", "Ya Kun"];
+    let res_len = restaurants.length;
+    let res_idx = Math.floor(Math.random() * res_len);
+    document.getElementById("demo").innerHTML = restaurants[res_idx];
+}
+</script>
 
 </body>
-</html>
+</html> 
